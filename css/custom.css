@@ -445,7 +445,7 @@ header.main-header {
 
 .main-header .container-fluid {
   position: relative;
-  padding-bottom: 20px;
+  padding: 0px;
 }
 
 .main-header .container-fluid::before {
@@ -2512,7 +2512,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .page-header {
   position: relative;
-  background: url("../images/page-header-bg.jpg") no-repeat;
+  background: url("../img/contact.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   overflow: hidden;
