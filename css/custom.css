@@ -992,7 +992,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .about-us-img-1 figure {
   display: block;
-  mask-image: url(../images/about-image-bg-shape.svg);
+  /* mask-image: url(../images/about-image-bg-shape.svg); */
   background-image: url(../images/about-image-bg-shape.svg);
   mask-size: cover;
   mask-position: center center;
