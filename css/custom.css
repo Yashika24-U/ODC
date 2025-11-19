@@ -578,7 +578,13 @@ header.main-header .header-sticky.active .container-fluid::before {
   left: 0;
   top: 100%;
   /* linear-gradient(to right, #810BAE 0%, #DAC8DE 50%, #810BAE 100%) */
-  background: linear-gradient(to right, #810bae 0%, #dac8de 50%, #810bae 100%);
+  /* background: linear-gradient(to right, #810bae 0%, #dac8de 50%, #810bae 100%); */
+  background: linear-gradient(
+      180deg,
+      rgba(4, 42, 45, 0) 65.37%,
+      var(--primary-color) 100.18%
+    ),
+    linear-gradient(270deg, #d2a9de3d 59.75%, var(--primary-color) 100%);
   text-align: left;
   transition: all 0.3s ease-in-out;
 }
@@ -806,7 +812,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
       180deg,
       rgba(4, 42, 45, 0) 65.37%,
       var(--primary-color) 100.18%
@@ -815,7 +821,13 @@ header.main-header .header-sticky.active .container-fluid::before {
       270deg,
       rgba(4, 42, 45, 0) 59.75%,
       var(--primary-color) 100%
-    );
+    ); */
+  background: linear-gradient(
+      180deg,
+      rgba(4, 42, 45, 0) 65.37%,
+      var(--primary-color) 100.18%
+    ),
+    linear-gradient(270deg, #d2a9de3d 59.75%, var(--primary-color) 100%);
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -2524,9 +2536,14 @@ header.main-header .header-sticky.active .container-fluid::before {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
+  /* background: linear-gradient(
     270deg,
     rgba(4, 42, 45, 0) 22.28%,
+    var(--primary-color) 100%
+  ); */
+  background-image: linear-gradient(
+    270deg,
+    #810bae24 22.28%,
     var(--primary-color) 100%
   );
   z-index: 0;
@@ -3072,6 +3089,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   right: 0;
   bottom: 0;
   background: url(../images/accent-arrow.svg);
+  filter: invert(1);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
