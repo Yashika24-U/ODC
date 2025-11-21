@@ -175,7 +175,7 @@
                         <a class="nav-link" href="#">Book Store</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">LifeThrive Blog</a>
+                        <a class="nav-link" href="#">Odyssey Blog</a>
                       </li>
                     </ul>
                   </li>
@@ -327,8 +327,8 @@
                 <p class="wow fadeInUp spacing-para">
                   As a CEO or COO at the helm of an organization without a
                   dedicated OD or HR department, you face unique developmental
-                  challenges. At LifeThrive, we understand that the growth of
-                  your "up and comers" is crucial to your company's agility and
+                  challenges. At Odyssey, we understand that the growth of your
+                  "up and comers" is crucial to your company's agility and
                   success.
                 </p>
 
@@ -363,9 +363,9 @@
                 <h4 class="spacing-h4">Empowerment for SMEs</h4>
                 <p class="wow fadeInUp spacing-para">
                   Tailored to the size and seniority of small to medium-sized
-                  businesses, LifeThrive's approach is perfect for companies
-                  with 10 to 250 employees, whether you're making a local impact
-                  or reaching across the nation, including ventures in England.
+                  businesses, Odyssey's approach is perfect for companies with
+                  10 to 250 employees, whether you're making a local impact or
+                  reaching across the nation, including ventures in England.
                 </p>
 
                 <h4 class="spacing-h4">Navigating Your Challenges</h4>
@@ -414,7 +414,7 @@
             <h4 class="spacing-h4">Consulting That Transforms</h4>
 
             <p class="wow fadeInUp spacing-para">
-              LifeThrive isn't just another OD consultancy. We provide in-depth,
+              Odyssey isn't just another OD consultancy. We provide in-depth,
               data-driven insights that reveal the strengths and untapped
               potential within your team. With our specialized assessments and
               actionable strategies, you'll witness a transformation into a
@@ -427,7 +427,7 @@
 
             <p class="wow fadeInUp spacing-para">
               Identify and remedy the performance and cultural "leakages" that
-              impede your growth. With LifeThrive, accelerate your team's
+              impede your growth. With Odyssey, accelerate your team's
               operational efficiency and effectiveness within your
               organizational culture, paving the way for enhanced growth and
               profitability.
@@ -462,6 +462,18 @@
 
       .cta-button {
         text-align: right;
+      }
+
+      .gradient-text {
+        background-image: linear-gradient(
+          267.43deg,
+          #fbefd3 4.95%,
+          #ffffff 97.92%
+        ) !important;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
       }
     </style>
     <!-- CTA Section Start -->
@@ -584,5 +596,17 @@
     <script src="js/wow.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+
+    <script>
+      const headerSticky = document.querySelector(".header-sticky");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          headerSticky.classList.add("active");
+        } else {
+          headerSticky.classList.remove("active");
+        }
+      });
+    </script>
   </body>
 </html>

@@ -174,7 +174,7 @@
                         <a class="nav-link" href="#">Book Store</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">LifeThrive Blog</a>
+                        <a class="nav-link" href="#">Odyssey Blog</a>
                       </li>
                     </ul>
                   </li>
@@ -456,7 +456,10 @@
             <div class="about-footer">
               <!-- Section Title Start -->
               <div class="section-title">
-                <h2>We develop & create <span>successful future</span></h2>
+                <h2>
+                  We develop & create
+                  <span class="gradient-text">successful future</span>
+                </h2>
               </div>
               <!-- Section Title End -->
             </div>
@@ -560,5 +563,17 @@
     <script src="js/wow.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+
+    <script>
+      const headerSticky = document.querySelector(".header-sticky");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          headerSticky.classList.add("active");
+        } else {
+          headerSticky.classList.remove("active");
+        }
+      });
+    </script>
   </body>
 </html>

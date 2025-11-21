@@ -48,11 +48,10 @@
   --primary-color: #200c34;
   --secondary-color: #f2f1ed;
   --text-color: #8f8f8f;
-  --accent-color: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  --accent-color: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   --dark-color: #019297;
   --white-color: #ffffff;
@@ -199,17 +198,11 @@ body {
 .btn-default {
   position: relative;
   display: inline-block;
-  /*background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
-  );;; */
-  background-image: linear-gradient(
-    to right,
-    #34204b 0%,
-    #dac8de 50%,
-    #34204b 100%
+  /*background-image: radial-gradient(50% 144.29% at 50% 50%, #877494 13.51%, #34204B 95%);;; */
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
 
   background-size: 200% auto;
@@ -280,11 +273,10 @@ body {
     var(--dark-color) 0.16%,
     var(--accent-color) 99.84%
   ); */
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   border-radius: 100px;
   transition: 0.4s ease-in-out;
@@ -503,6 +495,7 @@ header.main-header .header-sticky.active {
   transform: translateY(0);
   background: var(--primary-color);
   border-bottom: 1px solid var(--dark-divider-color);
+  padding: 20px;
 }
 
 header.main-header .header-sticky.active .container-fluid {
@@ -789,6 +782,38 @@ header.main-header .header-sticky.active .container-fluid::before {
   color: var(--primary-color);
 }
 
+header.main-header .header-sticky.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0;
+  transform: translateY(0);
+  background-color: #ffffff; /* White background */
+  border-bottom: 1px solid var(--dark-divider-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* All navbar links become primary color while sticky */
+.header-sticky.active .nav-link {
+  color: var(--primary-color) !important;
+}
+
+.header-sticky.active .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Phone button and icon */
+.header-sticky.active .btn-phone,
+.header-sticky.active .btn-phone i {
+  color: var(--primary-color) !important;
+}
+
+/* Dropdown menu links still white or modify here */
+.header-sticky.active .main-menu ul ul li a {
+  color: var(--white-color);
+}
+
 /************************************/
 /***        04. Hero css	      ***/
 /************************************/
@@ -1055,11 +1080,10 @@ header.main-header .header-sticky.active .container-fluid::before {
   top: 0;
   left: 0;
   transform: translateY(70%);
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   border-radius: 10px;
   padding: 20px;
@@ -1260,11 +1284,10 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .service-item .icon-box {
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   background-size: 200% auto;
   border-radius: 50%;
@@ -1306,11 +1329,10 @@ header.main-header .header-sticky.active .container-fluid::before {
   font-weight: 700;
   text-transform: capitalize;
   color: var(--white-color);
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   border-radius: 100px;
   background-size: 200% auto;
@@ -1491,11 +1513,10 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .pricing-box.highlighted-box {
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
 }
 
@@ -1713,11 +1734,10 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .video-play-button a {
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   background-size: 200% auto;
   border-radius: 50%;
@@ -1798,11 +1818,10 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .how-work-item .icon-box {
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   background-size: 200% auto;
   border-radius: 50%;
@@ -2016,11 +2035,10 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .our-faq-section .accordion-button:not(.collapsed) {
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   color: var(--white-color);
   border-bottom: 1px solid var(--dark-divider-color);
@@ -2056,11 +2074,10 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .our-faq-section .accordion-item .accordion-body {
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   padding: 20px 50px 20px 20px;
 }
@@ -2210,11 +2227,10 @@ header.main-header .header-sticky.active .container-fluid::before {
   position: relative;
   width: 45px;
   height: 45px;
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   background-size: 200% auto;
   border-radius: 50%;
@@ -2630,11 +2646,10 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .mission-vision-item .icon-box {
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   background-size: 200% auto;
   border-radius: 999px;
@@ -3090,7 +3105,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   top: 50%;
   right: 0;
   bottom: 0;
-  background: url(../images/accent-arrow.svg);
+  background: url(../images/arrow-white.svg);
   filter: invert(1);
   background-repeat: no-repeat;
   background-position: center center;
@@ -3165,7 +3180,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   position: absolute;
   top: 0;
   right: 0;
-  background: url(../images/accent-arrow.svg) no-repeat;
+  background: url(../images/arrow-white.svg) no-repeat;
   filter: invert(1);
   background-position: right center;
   background-size: auto;
@@ -3403,11 +3418,10 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .post-btn a {
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   background-size: 200% auto;
   height: 50px;
@@ -3660,11 +3674,10 @@ header.main-header .header-sticky.active .container-fluid::before {
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   background-size: 200% auto;
   color: var(--white-color);
@@ -3702,11 +3715,10 @@ header.main-header .header-sticky.active .container-fluid::before {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   background-size: 200% auto;
   color: var(--white-color);
@@ -4081,11 +4093,10 @@ header.main-header .header-sticky.active .container-fluid::before {
   right: 0;
   transform: translate(-50%, -50%);
   font-size: 20px;
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   color: var(--white-color);
   border-radius: 50%;
@@ -4165,7 +4176,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   position: absolute;
   top: 0;
   right: 0;
-  background: url(../images/accent-arrow.svg) no-repeat;
+  background: url(../images/arrow-white.svg) no-repeat;
   background-position: right center;
   background-size: auto;
   width: 24px;
@@ -4276,11 +4287,10 @@ header.main-header .header-sticky.active .container-fluid::before {
 }
 
 .contact-info-body .icon-box {
-  background-image: linear-gradient(
-    to right,
-    #810bae 0%,
-    #dac8de 50%,
-    #810bae 100%
+  background-image: radial-gradient(
+    50% 144.29% at 50% 50%,
+    #877494 13.51%,
+    #34204b 95%
   );
   background-size: 200% auto;
   border-radius: 50%;

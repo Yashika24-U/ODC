@@ -137,6 +137,18 @@
       .btn-phone i {
         color: #ffffff;
       }
+
+      .gradient-text {
+        background-image: linear-gradient(
+          267.43deg,
+          #fbefd3 4.95%,
+          #ffffff 97.92%
+        ) !important;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+      }
     </style>
   </head>
 
@@ -200,7 +212,7 @@
                         <a class="nav-link" href="#">Book Store</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">LifeThrive Blog</a>
+                        <a class="nav-link" href="#">Odyssey Blog</a>
                       </li>
                     </ul>
                   </li>
@@ -342,12 +354,12 @@
               <div class="service-entry service-entry-clean">
                 <h2 class="wow fadeInUp spacing-title" data-wow-delay="0.4s">
                   Achieve Optimal Results at Every Stage of the
-                  <span> Employee Growth Lifecycle </span> with LifeThrive
+                  <span> Employee Growth Lifecycle </span> with Odyssey
                 </h2>
 
                 <p class="wow fadeInUp spacing-para">
                   From the initial hiring to ongoing development and retention,
-                  LifeThrive's comprehensive assessments and years of expertise
+                  Odyssey's comprehensive assessments and years of expertise
                   provide deep insights into your team.
                 </p>
 
@@ -358,8 +370,8 @@
                 </p>
 
                 <p class="wow fadeInUp spacing-para">
-                  With LifeThrive assessments, unlock your team's full
-                  potential, boost productivity, and secure profitable growth.
+                  With Odyssey assessments, unlock your team's full potential,
+                  boost productivity, and secure profitable growth.
                 </p>
 
                 <h4 class="spacing-h4">Acquisition Phase:</h4>
@@ -394,7 +406,7 @@
                 <h4 class="spacing-h4">Development Phase:</h4>
                 <p class="wow fadeInUp spacing-para">
                   Unlock your workforce's full capabilities and cultivate a
-                  dynamic organizational culture with LifeThrive's innovative
+                  dynamic organizational culture with Odyssey's innovative
                   career development strategies. Our focus on employee
                   engagement, productivity maximization, and long-term retention
                   empowers your organization to reach new heights of success. We
@@ -589,5 +601,16 @@
     <script src="js/wow.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    <script>
+      const headerSticky = document.querySelector(".header-sticky");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          headerSticky.classList.add("active");
+        } else {
+          headerSticky.classList.remove("active");
+        }
+      });
+    </script>
   </body>
 </html>

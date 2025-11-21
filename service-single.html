@@ -113,6 +113,18 @@
       }
     }
 
+    .gradient-text {
+      background-image: linear-gradient(
+        267.43deg,
+        #fbefd3 4.95%,
+        #ffffff 97.92%
+      ) !important;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+    }
+
     .main-menu ul li a {
       font-size: 16px;
       font-weight: 700;
@@ -190,7 +202,7 @@
                         <a class="nav-link" href="#">Book Store</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="#">LifeThrive Blog</a>
+                        <a class="nav-link" href="#">Odyssey Blog</a>
                       </li>
                     </ul>
                   </li>
@@ -323,17 +335,16 @@
 
                 <p class="wow fadeInUp spacing-para">
                   In a world where career advancement often relies on
-                  opportunities provided by employers, LifeThrive offers a
-                  unique path just for you. We understand that your career
-                  growth can't wait. That's why we've crafted personalized
-                  programs to help you harness your full potential—on your own
-                  terms.
+                  opportunities provided by employers, Odyssey offers a unique
+                  path just for you. We understand that your career growth can't
+                  wait. That's why we've crafted personalized programs to help
+                  you harness your full potential—on your own terms.
                 </p>
 
                 <h4 class="spacing-h4">Your Unique Journey to Success</h4>
 
                 <p class="wow fadeInUp spacing-para">
-                  At LifeThrive, we recognize that true growth goes beyond the
+                  At Odyssey, we recognize that true growth goes beyond the
                   basics. Our data-driven insights delve into the core of your
                   professional persona, uncovering the key elements that make
                   you stand out. With us, you gain access to a suite of targeted
@@ -347,7 +358,7 @@
 
                 <p class="wow fadeInUp spacing-para">
                   Discover the essence of your professional efficiency and
-                  effectiveness. LifeThrive is your partner in pinpointing areas
+                  effectiveness. Odyssey is your partner in pinpointing areas
                   for growth and harnessing your innate strengths to fast-track
                   your career progress and fulfill your aspirations.
                 </p>
@@ -382,8 +393,8 @@
                 </ul>
 
                 <p class="wow fadeInUp spacing-para">
-                  Embark on a journey with LifeThrive, where your personal
-                  growth is in your hands. Let's unlock the door to your career
+                  Embark on a journey with Odyssey, where your personal growth
+                  is in your hands. Let's unlock the door to your career
                   advancement together
                 </p>
               </div>
@@ -509,5 +520,16 @@
     <script src="js/wow.js"></script>
     <!-- Main Custom js file -->
     <script src="js/function.js"></script>
+    <script>
+      const headerSticky = document.querySelector(".header-sticky");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 50) {
+          headerSticky.classList.add("active");
+        } else {
+          headerSticky.classList.remove("active");
+        }
+      });
+    </script>
   </body>
 </html>
